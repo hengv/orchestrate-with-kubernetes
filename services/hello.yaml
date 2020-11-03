@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: hello
+  name: "hello"
 spec:
   selector:
-    app: hello
-    version: 2.0.0
+    app: "hello"
   ports:
-    - protocol: TCP
+    - protocol: "TCP"
       port: 80
       targetPort: 80
+  type: LoadBalancer
